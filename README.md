@@ -1,8 +1,17 @@
 # Fancy Counter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Fancy counter is a simple and minimal application that allow users to decrement and increment a counter.
+It's a small project created as part of learning React
 
-Currently, two official plugins are available:
+> [!Important]
+> The project uses React bootstraped using vite.
+> To Run the project make sure you have nodejs installed in your system then run npm install to install the dependencies
+> And run development server by running npm run dev in your terminal
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features of Fancy Counter
+
+1. Increment and Decrement counter using buttons
+2. Lower-bound of zero(0) and upper-bound of five(5)
+3. Reset button to reset the counter
+4. Use spacebar on keyboard to increment the counter
+5. Rich user interface
