@@ -3,6 +3,7 @@ import { Count } from "./Count"
 import ResetButton from "./ResetButton"
 import Title from "./Title"
 import ButtonContainer from "./ButtonContainer"
+import CountButton from "./CountButton"
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.code === 'Space') {
+      if (e.code === 'Space') { 
         const newCount = count + 1
         if (newCount > 5) {
           return setCount(5)
@@ -34,7 +35,10 @@ function App() {
       <Title lock={lock}/>
       <Count count={count}/>
       <ResetButton setCount={setCount}/>
-      <ButtonContainer setCount={setCount} lock={lock}/>
+      <ButtonContainer>
+      <CountButton type="minus" setCount={setCount} lock={lock}/>
+      <CountButton type="plus" setCount={setCount} lock={lock}/>
+      </ButtonContainer>
       </div>
     </main>
   )
