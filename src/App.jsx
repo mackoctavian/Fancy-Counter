@@ -1,8 +1,18 @@
-import React from 'react'
+import { Count } from "./Count"
+import CountButton from "./CountButton"
+import ResetButton from "./ResetButton"
+import Title from "./Title"
 
 function App() {
   return (
-    <div>App</div>
+    <main>
+      <div className="card">
+      <Title />
+      <Count />
+      <ResetButton />
+      <CountButton />
+      </div>
+    </main>
   )
 }
 
